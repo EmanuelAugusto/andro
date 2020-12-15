@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.profileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingHorizontal="9dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#673AB7"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:cardCornerRadius="30dp"
+        tools:cardUseCompatPadding="true"
+        tools:cardElevation="0dp"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="218dp"
+            android:layout_height="207dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-160dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="user"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dataprofile"
+            android:layout_height="wrap_content"
+            android:text="Dados Pessoais"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="#303F9F"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/myPayments"
+            android:layout_height="wrap_content"
+            android:text="Meus Pedidos"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="#303F9F"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#EA0000"
+            android:text="Sair"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

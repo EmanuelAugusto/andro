@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="#FFFFFF"
+    android:outlineSpotShadowColor="#FFFFFF"
+    tools:context=".Fragments.salesman">
+
+    <RelativeLayout
+        android:id="@+id/profilesalesman"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        android:layout_gravity="left"
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_marginTop="10dp"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:layout_margin="1dp"
+            android:src="@drawable/buy" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:layout_marginTop="190dp"
+            android:text="Nome Restaurante"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="endereco"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_below="@+id/item_title"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loadSearchProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:progressTint="#FFFFFF"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="310dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp"
+        android:visibility="invisible"
+        android:background="@drawable/custombackground">
+
+        <ListView
+            android:id="@+id/userlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loadSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:visibility="visible" />
+
+</FrameLayout>

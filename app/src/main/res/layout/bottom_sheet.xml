@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:padding="10dp"
+    android:id="@+id/bottom_sheet"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Order Details"
+            android:textColor="#444"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="₹435.00"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="loading"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Delivery Address"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Flat No 86 New Delhi , Delhi India"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="PROCEED PAYMENT"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
